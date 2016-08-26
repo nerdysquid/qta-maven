@@ -110,7 +110,7 @@
 				<artifactId>maven-deploy-plugin</artifactId>
 				<version>2.8.1</version>
 				<configuration>
-					<altDeploymentRepository>internal.repo::default::file:///Users/siddhartha.jadeja/Office/Data/QTA/mvn-repo</altDeploymentRepository>
+					<altDeploymentRepository>internal.repo::default::file:///QTA/mvn-repo</altDeploymentRepository>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -121,7 +121,7 @@
 					<message>
 						Maven artifacts for ${project.version}</message>  <!-- git commit message -->
 					<noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
-					<outputDirectory>/Users/siddhartha.jadeja/Office/Data/QTA/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
+					<outputDirectory>/QTA/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
 					<branch>refs/heads/mvn-repo</branch>                       <!-- remote branch name -->
 					<includes>
 						<include>**/*</include>
@@ -185,7 +185,7 @@
 		<repository>
 			<id>internal.repo</id>
 			<name>Temporary Staging Repository</name>
-			<url>file:///Users/siddhartha.jadeja/Office/Data/QTA/mvn-repo</url>
+			<url>file:///QTA/mvn-repo</url>
 		</repository>
 	</distributionManagement>
 	<properties>
