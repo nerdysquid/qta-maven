@@ -5,45 +5,14 @@
 	<artifactId>qtautomation-maven-plugin</artifactId>
 	<version>0.0.1</version>
 	<name>QMetry Test Automation maven plugin</name>
-	<packaging>maven-plugin</packaging>
+	<packaging>jar</packaging>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.apache.maven</groupId>
-			<artifactId>maven-plugin-api</artifactId>
-			<version>2.0</version>
-		</dependency>
-
-		<!-- dependencies to annotations -->
-		<dependency>
-			<groupId>org.apache.maven.plugin-tools</groupId>
-			<artifactId>maven-plugin-annotations</artifactId>
-			<version>3.4</version>
-			<scope>provided</scope>
-		</dependency>
 
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-core</artifactId>
 			<version>1.2.4</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.maven</groupId>
-			<artifactId>maven-project</artifactId>
-			<version>2.2.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.maven</groupId>
-			<artifactId>maven-artifact</artifactId>
-			<version>3.3.3</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.maven</groupId>
-			<artifactId>maven-core</artifactId>
-			<version>3.3.3</version>
 		</dependency>
 
 		<dependency>
@@ -140,9 +109,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-jar-plugin</artifactId> 
-				<version>2.3.1</version> <configuration> <outputDirectory>C:\Users\siddhartha.jadeja\.m2\repository\com\infostretch\qtautomation\qtautomation-maven-plugin\0.0.1-SNAPSHOT</outputDirectory> 
-				</configuration> </plugin> -->
 		</plugins>
 		<pluginManagement>
 			<plugins>
@@ -179,8 +145,6 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-	<!-- <distributionManagement> <repository> <id>qta-ftp</id> <url>ftp://104.239.146.169/qta/maven2/</url> 
-		</repository> </distributionManagement> -->
 	<distributionManagement>
 		<repository>
 			<id>internal.repo</id>
